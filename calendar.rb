@@ -13,10 +13,10 @@ class CalendarMonthsWeeks
 
 private
   def first_calendar_day
-    @date = Date.today.beginning_of_month.beginning_of_week(:sunday)
+    @date.beginning_of_month.beginning_of_week(:sunday)
   end
 
   def last_calendar_day
-    @date = Date.today.end_of_month.end_of_week(:sunday)
+    @date.end_of_month.end_of_week(:sunday)
   end
 end
