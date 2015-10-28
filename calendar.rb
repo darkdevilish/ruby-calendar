@@ -8,9 +8,15 @@ class CalendarMonthsWeeks
   end
 
   def to_a
-    first_calendar_day = Date.today.beginning_of_month.beginning_of_week(:sunday)
-    last_calendar_day = Date.today.end_of_month.end_of_week(:sunday)
-
     (first_calendar_day..last_calendar_day).to_a.in_groups_of(7)
+  end
+
+private
+  def first_calendar_day
+    @date = Date.today.beginning_of_month.beginning_of_week(:sunday)
+  end
+
+  def last_calendar_day
+    @date = Date.today.end_of_month.end_of_week(:sunday)
   end
 end
