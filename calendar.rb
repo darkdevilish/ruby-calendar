@@ -1,8 +1,8 @@
 require 'active_support/core_ext/date'
 require 'active_support/core_ext/time'
 require 'active_support/core_ext/array'
-require 'calendar_month_weeks'
-require 'day_styles'
+require_relative 'calendar_month_weeks'
+require_relative 'day_styles'
 
 class Calendar
   def initialize(date=Date.today)

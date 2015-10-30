@@ -1,7 +1,7 @@
 require 'active_support/core_ext/date'
 require 'active_support/core_ext/time'
 require 'active_support/core_ext/array'
-require '../day_styles'
+require_relative '../day_styles'
 
 describe DayStyles do
 

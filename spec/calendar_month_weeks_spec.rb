@@ -1,7 +1,7 @@
 require 'active_support/core_ext/date'
 require 'active_support/core_ext/time'
 require 'active_support/core_ext/array'
-require '../calendar_month_weeks'
+require_relative '../calendar_month_weeks'
 
 describe CalendarMonthWeeks do
   before do
