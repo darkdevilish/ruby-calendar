@@ -4,7 +4,7 @@ class DayStyles
   end
 
   def to_s
-    [past, today, future, other_month].compact.join("  ")
+    [past, today, future, other_month].compact.join(" ")
   end
 
 private
