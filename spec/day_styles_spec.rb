@@ -11,12 +11,14 @@ describe DayStyles do
     expect(today).to eq("today")
   end
 
+  # It'll fail if end of the month
   it "returns future" do
     future = DayStyles.new(Time.now.days_since(2).to_date).to_s
 
     expect(future).to eq("future")
   end
 
+  # It'll fail if beginning of the month
   it "returns past" do
     past = DayStyles.new(Time.now.days_since(-2).to_date).to_s
 
